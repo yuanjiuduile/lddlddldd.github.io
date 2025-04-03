@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三周总结反思</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 正文样式 */
+        .content {
+            font-size: 1.1rem;
+          margin: 1rem 0;
+          text-align: justify;
+        }
+
+        /* 图片容器 */
+        .img-container {
+            margin: 2rem auto;
+            max-width: 90%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 特色文本样式 */
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 4px;
+        }
+
+        /* 引用样式 */
+        blockquote {
+            border-left: 4px solid #4ecdc4;
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* 返回链接 */
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #2d3436;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>第三周总结反思</h1>
+
+        <!-- 正文内容 -->
+        <div class="content">
+            <p>
+                本节课我们还是通过观察快递面单，发散思维，猜测id的特点等等。
+            </p>
+            <p>
+                下面是我在讨论时写的一点东西，因为一边在思考讨论跃一边在写，所以手跟不上脑子，写的一知半解：
+            </p>
+            <div class="img-container">
+                <img src="C:\Users\21608\Desktop\journal\m_answer\m3.1.jpg" alt="图片说明">
+            </div>
+            <p>
+                徐sir和我们分享了一下他去修车的经历，前后串起来就是，比亚迪的电车设计有一个槽点，因为○1它有一个大电箱和小电箱，小电箱负责给车供电，大电箱负责给小电箱充电；○2大电箱只有在汽车发动时才会持续给小电箱充电，汽车一熄火，大电箱就不工作了，只有小电箱在给汽车供电；○3徐sir将汽车停在路边，打开双闪，持续了一会儿后回到车内，发现汽车故障。汽车4S店给出的原因是小电箱电量耗尽导致的。
+            </p>
+            <p>
+                从中可以看出，BYD的汽车设计存在一定的缺陷。根据生活经验，当汽车熄火后，电车必然存在用电需求，如防盗系统、传感系统等等，而这些系统的供电来源仅是靠小电箱提供，而蓄电池的容量也比较有限，这就导致不能在熄火后长时间使用一些大功率的设备，像是双闪，从而防止蓄电池快速耗电而影响电池寿命。
+            </p>
+            <p>
+                （单从该问题出发）我的解决方案是修改大电箱的功能，让其在启动后为小电箱供电，熄火后代替小电箱为汽车供电。该方案说起来简单，但也存在一些缺点，○1需要考虑大电箱与汽车各系统（防盗系统、传感系统、灯光系统……）的耦合：可能会存在大电箱的输出电流超过系统的最大工作电流；○2需要考虑大电箱的属性是否适合进行供电操作；○3考虑用户需求，是否大部分用户都有此困扰，避免成本和收益不成正比……
+            </p>
+            <p>
+                再将方案改一改，可以放置一个中电箱，专门负责熄火后为汽车供电，或者增大小电箱容量，在技术上突破。好吧……新的漏洞又出现了，成本也是一个问题……总之没有绝对完美的方案，一切都要看用户的需求。
+            </p>
+
+        </div>
+
+        <!-- 返回链接 -->
+        <a href="C:\Users\21608\Desktop\journal\课后总结反思\课后体验.html" class="home-link">返回</a>
+    </div>
+</body>
+</html>

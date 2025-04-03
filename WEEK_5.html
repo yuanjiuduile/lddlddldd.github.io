@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五周总结反思</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 正文样式 */
+        .content {
+            font-size: 1.1rem;
+          margin: 1rem 0;
+          text-align: justify;
+        }
+
+        /* 图片容器 */
+        .img-container {
+            margin: 2rem auto;
+            max-width: 90%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 特色文本样式 */
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 4px;
+        }
+
+        /* 引用样式 */
+        blockquote {
+            border-left: 4px solid #4ecdc4;
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* 返回链接 */
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #2d3436;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>第五周总结反思</h1>
+
+        <!-- 正文内容 -->
+        <div class="content">
+            <!-- 段落示例 -->
+            <p>
+                本节课，我们有两组进行了关于网络设计的表演，我们组是最后表演的（嘿嘿）。
+            </p>
+            <p>
+                先看第一组的设计，他们着重设计了节点内部的功能图：从数据传入一个节点后开始考虑，节点内部的功能分为中转、解析地址、分析地址是否属于本节点、安全检查、监管等等。我觉得这一组的重点搞错了，因为我们注重的是网络的整体设计，更在意的是节点与节点之间的联系，而他们主要展示的是节点内部是如何工作运行的，由于他们设计的是一个简单网络，所以只有两个节点之间的交流，没有考虑复杂的网络（交叉、分叉等等）。
+            </p>
+            <p>
+                第二组的设计，他们有多个节点，每个节点都能通往其他两个节点（这里设计成能通往两个节点是为了好表演，现实中能通往更多节点），且分配有权重，每个节点都能与控制器互相沟通。这个网络运行的机制是，向某一个节点发送一条信息后，该节点告知控制器，控制器通过算法将路径规划好，再告知该节点应该传递到哪里。网络总体比较简单，但相应的缺点是控制器的工作太繁杂，活全部由控制器来做；而且本网络适用于固定网络，每一个节点的传输路径和路径权重不能改变，否则控制器的天都塌了，前一秒和后一秒的路径完全不一样，很难去准确规划。
+            </p>
+
+        </div>
+
+        <!-- 返回链接 -->
+        <a href="C:\Users\21608\Desktop\journal\课后总结反思\课后体验.html" class="home-link">返回</a>
+    </div>
+</body>
+</html>

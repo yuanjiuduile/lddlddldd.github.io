@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四周总结反思</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 正文样式 */
+        .content {
+            font-size: 1.1rem;
+          margin: 1rem 0;
+          text-align: justify;
+        }
+
+        /* 图片容器 */
+        .img-container {
+            margin: 2rem auto;
+            max-width: 90%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 特色文本样式 */
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 4px;
+        }
+
+        /* 引用样式 */
+        blockquote {
+            border-left: 4px solid #4ecdc4;
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* 返回链接 */
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #2d3436;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>第四周总结反思</h1>
+
+        <!-- 正文内容 -->
+        <div class="content">
+            <!-- 段落示例 -->
+            <p>
+                这节课非常的<span class="highlight">有意思！</span>
+            </p>
+            <p>
+                第一节课，徐sir让我们做了一个游戏——传纸条，以便让我们更深刻地体验网络运行的过程。
+            </p>
+            <p>
+                游戏开始：
+            </p>
+            <p>
+                我们每人有6张左右的纸条，纸条上附有一些信息，并且我们的空间的排列可以近似为网格状，每个人都是网格的一个节点，传递纸条时只能往前后左右传递。
+            </p>
+            <p>
+                接着，徐sir让我们将纸条传给每一排最左边的那个人，大家比较有序、统一的往左边传。这里有一个思考，为什么“我的右边”不是老师说的的“左边”，老师说的左边一定要指“我的左边”吗，这里应该存在一个“协议”（我们共同遵守的准则），在网络中有一些协议，如HTTP协议、TCP/IP协议等等。
+            </p>
+            <p>
+                徐sir第二次让我们将纸条传给“周理泰”（班上的一位同学），我当时还不认识这位同学，所以我就往前后左右各传递了若干张，也不知道我的纸条最后传到了哪里，也有其他节点给我传了纸条。总体感觉我的状态是懵的，不知道往哪里传纸条。
+            </p>
+            <p>
+                我们之中不是所有人都认识这位同学，但存在认识这位同学的节点，那么这个节点就会只往周同学传递，其他人可以观察到该节点老往那边传（我可以称为“信息密度大”），也就可以学着也往那个方向传递。
+            </p>
+            <p>
+                第三次让我们将纸条传给三个同学，其中两位是班上的同学，一位是徐sir虚构的同学。但可惜我都不认识，还是像无头苍蝇一样往前后左右乱传。
+            </p>
+            <P>
+                可见，网络中需要设计一些功能，确保信息的传递效率，若每个节点都只有传递的功能，只顾负责传，可能一条消息传了一年都没传到。
+            </P>
+            <P>
+                游戏结束后，徐sir提出来在这个网络中，需要有人来担任Look-up功能、Planning功能、EXEC功能，并让我们组成小组、讨论设计我们的网络，并表演出来。
+            </P>
+            <p>
+                第二节课，一位叫“周冰“的老师来听课，徐sir称作其为”coach“，意思是coach的实力连徐sir都觉得非常强（接下来我深刻体会到了周老师的强大实力）。coach向徐sir商量能不能借用三分钟，分别找三个同学来介绍从第一节课开始，我们都做了什么。（但最终用了一节课哈哈哈）
+            </p>
+            <p>
+                Coach找了第一位幸运观众，让他准备一分钟思考，并用一分钟陈述回答coach的问题。这位同学的回答我归纳为：这门课的一些特点。
+            </p>
+            <p>
+                接着第二位同学上场，coach让其问他一个问题，第一个问题是“你当年读的专业是什么”，coach回答道他毕业已经很多年了，而且从事的事业与专业没有任何关系，coach让他重新问，第二个问题是“你有系统学过计算机通信网这门课吗”，coach说没有，而且评价说这是一个封闭的问题，除了是或否得不到其他有价值的信息，coach又给了一次机会，迪第三个问题是“你对什么不感兴趣”，coach指证说，对于一个用户，你是想知道他对什么比较关心，还是对什么不关心，明显是前者，这也给了我对提问的启示。接着就是这位同学的一分钟回答，我的总结就是：这些特点对上课学生的好处。主要是想承接第一位同学的话，说明这门课的与众不同的特点对学生的意义。
+            </p>
+            <p>
+                第三位同学回答前，coach提醒到刚才那位同学说到了这门课对学生的意义，那coach作为用户，更想知道的这门有特点的课对用户有什么好处，我只记得最后回答了一句“这门课能让你变聪明”（确实是一个很实诚的作用）。
+            </p>
+            <p>
+                在跟着coach思考了一节课后，我确实觉得coach非常擅长引导我们思考，我也收获了许多。
+            </p>
+
+        </div>
+
+        <!-- 返回链接 -->
+        <a href="C:\Users\21608\Desktop\journal\课后总结反思\课后体验.html" class="home-link">返回</a>
+    </div>
+</body>
+</html>
