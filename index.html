@@ -1,33 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>吕栋栋的网站</title>
     <style>
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        nav a {
-            color: white;
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #2d3436;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .page-link {
+            display: block;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: #2d3436;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .page-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 3rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <a href="/lddlddldd.github.io/课后体验.html">课后体验</a>
-        <a href="/lddlddldd.github.io/文章总结.html">文章总结</a>
-        <a href="/lddlddldd.github.io/三种图.html">三种图示</a>
-    </nav>
-    <h1>欢迎来到吕栋栋的网站</h1>
-    <p>请通过导航栏选择你要访问的页面。</p>
+    <div class="container">
+        <h1>欢迎来到吕栋栋的网站</h1>
+        <p class="description">探索知识的海洋，分享学习的收获</p>
+        
+        <div class="link-grid">
+            <a href="C:\Users\21608\Desktop\journal\课后总结反思\课后体验.html" class="page-link">
+                <h2>课后体验及反思</h2>
+            </a>
+            <a href="C:\Users\21608\Desktop\journal\First_HW\文章总结.html" class="page-link">
+                <h2>公众号文章总结</h2>
+            </a>
+            <a href="C:\Users\21608\Desktop\journal\Second_HW\三种图.html" class="page-link">
+                <h2>系统图解</h2>
+            </a>
+
+        </div>
+    </div>
 </body>
 
-</html>  
+</html>
