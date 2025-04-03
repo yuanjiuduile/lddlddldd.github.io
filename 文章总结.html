@@ -1,42 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于徐sir的公众号文章感受</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            text-align: justify;
+            word-wrap: break-word;
+            max-width: 40em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            margin: 1.5rem 0;
+        }
+
+        .quote {
+            border-left: 4px solid #4ecdc4;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            color: #555;
+        }
+    </style>
 </head>
-<body bgcolor="black" text="white">
-    <H1>关于徐sir的公众号文章感受<br></H1>
-    <p>
-        先简单说一下文章的内容，就是一群大学生们在做物理实验时，屁股撅着、趴在显微镜前，<br>
-        直到下课了大家都还在撅着，看着就很累，老师的意图就是想让大家坐下做实验，如果显微<br>
-        镜和钠灯的空间关系有待调整，那就可以动一动手、和旁边的人交流交流，换一种做实验的<br>
-        方式，但貌似没有人听进去老师说的话。<br>
-        感觉大家的思维都被固定住了，显微镜摆成什么样就是什么样，摆多远多要我们探过脑袋去<br>
-        反而不是想一想为什么不能动一下显微镜？是怕老师指责，或者是多年以来养成的“良好”习<br>
-        惯，或者积累的经验？<br>
-    </p>
-    <p>
-        当徐sir说有什么解决的方案时，我也在大脑中思考了一下，最后得出了坐在一旁的两位同学<br>
-        共同用同一盏钠灯，显微镜在两边，钠灯在中间，都放在靠桌边处（没想到和徐sir的答案意<br>
-        外的相同，哈哈哈）
-    </p>
-    <p>
-        其实同学们之所以只顾着弯腰去做实验，而不愿意移动仪器，有一点原因是没有思考为什么仪<br>
-        器要那样摆放，因为如果放在桌边时，显微镜可能会被一不小心挤下去，得不偿失了，所以放<br>
-        在桌子中央最保险，而当我们在实验时注意到防止显微镜摔下去这一点时，我们其实就能意识<br>
-        到可以换一种做实验的方式（坐着）。
-    </p>
-    <p>
-        为什么大家容易先入为主？我的父母从小就和我说不要乱动别人的东西，可能大家都会收到这<br>
-        种潜移默化的影响，这事有利有弊吧，防止我们闯祸的同时却消磨了我们对其他事物的好奇心<br>
-        如果我再追究的更深的话，就应该是和我们中国人的劣根性有关（我乱说的，只是猜测）总是<br>
-        觉得事不关己，就不要过多去管，自己做自己的就行了，说到这里就想起小品《扶不扶》<br>
-    </p>
-    <p>
-        不过我觉得我如果遇到这种事情，我大概率会想着把显微镜拖过来（因为懒），除非被老师职<br>
-        责，但懒也不是一种坏事，反而是灵活性的体现，我们的四大发明 活字印刷术也是因为太懒了<br>
-        才无意间发明出来的。
-    </p>
+<body>
+    <div class="container">
+        <h1>关于徐sir的公众号文章感受</h1>
+
+        <p>
+            先简单说一下文章的内容，就是一群大学生们在做物理实验时，屁股撅着、趴在显微镜前，直到下课了大家都还在撅着，看着就很累，老师的意图就是想让大家坐下做实验，如果显微镜和钠灯的空间关系有待调整，那就可以动一动手、和旁边的人交流交流，换一种做实验的方式，但貌似没有人听进去老师说的话。感觉大家的思维都被固定住了，显微镜摆成什么样就是什么样，摆多远多要我们探过脑袋去反而不是想一想为什么不能动一下显微镜？是怕老师指责，或者是多年以来养成的“良好”习惯，或者积累的经验？
+        </p>
+        <p>
+            当徐sir说有什么解决的方案时，我也在大脑中思考了一下，最后得出了坐在一旁的两位同学共同用同一盏钠灯，显微镜在两边，钠灯在中间，都放在靠桌边处（没想到和徐sir的答案意外的相同，哈哈哈）
+        </p>
+        <p>
+            其实同学们之所以只顾着弯腰去做实验，而不愿意移动仪器，有一点原因是没有思考为什么仪器要那样摆放，因为如果放在桌边时，显微镜可能会被一不小心挤下去，得不偿失了，所以放在桌子中央最保险，而当我们在实验时注意到防止显微镜摔下去这一点时，我们其实就能意识到可以换一种做实验的方式（坐着）。
+        </p>
+        <p>
+            为什么大家容易先入为主？我的父母从小就和我说不要乱动别人的东西，可能大家都会收到这种潜移默化的影响，这事有利有弊吧，防止我们闯祸的同时却消磨了我们对其他事物的好奇心如果我再追究的更深的话，就应该是和我们中国人的劣根性有关（我乱说的，只是猜测）总是觉得事不关己，就不要过多去管，自己做自己的就行了，说到这里就想起小品《扶不扶》
+        </p>
+        <p>
+            不过我觉得我如果遇到这种事情，我大概率会想着把显微镜拖过来（因为懒），除非被老师职责，但懒也不是一种坏事，反而是灵活性的体现，我们的四大发明 活字印刷术也是因为太懒了才无意间发明出来的。
+        </p>
+        
+        <a href="C:\Users\21608\Desktop\journal\index.html" class="home-link">返回首页</a>
+    </div>
 </body>
 </html>
