@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第六周总结反思</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: gradientFlow 15s ease infinite;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 正文样式 */
+        .content {
+            font-size: 1.1rem;
+          margin: 1rem 0;
+          text-align: justify;
+        }
+
+        /* 图片容器 */
+        .img-container {
+            margin: 2rem auto;
+            max-width: 90%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 特色文本样式 */
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 4px;
+        }
+
+        /* 引用样式 */
+        blockquote {
+            border-left: 4px solid #4ecdc4;
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* 返回链接 */
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #2d3436;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>第六周总结反思</h1>
+
+        <!-- 正文内容 -->
+        <div class="content">
+            <!-- 段落示例 -->
+            <p>
+                徐sir给我们展示了招生宣传的PPT，可以看出家长们的关心存在一定的合理性，但实质上都是按照自己的经验想来为孩子们选一条道路，而忽视了学生才是主体，何况上个年代怎么能与新时代相提并论，时代的风口变了，新事物出现了，大人们走过的道路不一定能在这个时代能走的通，我们面对的未来具有太多不确定性，如果每个人都按照家长们的想法，去考公、考研、或者其他，面对的无疑是僧多粥少，加剧内卷。
+最好的方式是让学生们多去体验，感受每一种体验生活的方式，最终才能够真正自信的说我决定走这条路。这比家长们说教一万遍强多了。
+最近小米su7 ultra的事故也火爆网络，徐sir认为小米是将一种普通人未能触及的领域强行拉入普通人的生活中，这辆车更像是跑车，百公里加速很快，一般人哪能买得起跑车，像兰博基尼、法拉利那种，而小米却将这类事物带进了普通人的生活中，容易引起一些事故，这很合理。那我们是该批判这种行为吗？我觉得并非如此，就像网上流传着一句话“小米su7配置最低的是车主”，我认为这能很好的促进社会的进步，我们面对新事物的心态永远不能是消极的，不能是排斥的，否则可能会像清代闭关锁国一样固步自封。
+接着是我们组进行上节课没完成的表演，我们组的方案如下图，
+我们组的网络结构是由许多个地址节点作为底层结构，初级节点统管着若干个地址，中级节点统管着若干个初级节点，高级节点统管着若干中级节点。我们的工作流程是：当某个地址要发送消息时，首先会交给上一级（初级节点），初级节点在其管理下的地址中查找是否有目标地址，若有，则直接将信息传递；若无，则再将信息传递给上一级（中级节点），中级节点询问其管理的其他初级节点，是否有目标地址，若无，则再将信息传递给上一级（高级节点），同理。若最终还未找到，则该消息被视为垃圾信息。
+不过我们这个可以看作是一个静态网络，有同学认为，我们这个网络应该有存储记忆的功能，既然是静态网络，那么直接记忆从哪里到哪里应该走哪条路线不是更高效吗？确实如此，我们这个网络应该增加一个记忆系统，当工作到一定程度，所有地址的路线都被储存后，才能够高效运作，成为一种Warm-up的网络。
+            </p>
+
+        </div>
+
+        <!-- 返回链接 -->
+        <a href="C:\Users\21608\Desktop\journal\课后总结反思\课后体验.html" class="home-link">返回首页</a>
+    </div>
+</body>
+</html>
